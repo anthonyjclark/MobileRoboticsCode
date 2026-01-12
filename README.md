@@ -7,11 +7,21 @@ Code for CS 181R---Mobile Robotics---at Pomona College.
 ```text
 .
 ├── Examples
+│  ├── Encoders
 │  ├── MotorControl
+│  ├── ProportionalControl
 │  ├── WSHeartbeat
 │  └── WSHeartbeatRefactored
+├── Simulation
+│  └── positionControl.py
+├── Web
+│  └── index.html
 ├── include
+│  ├── display.h
+│  ├── forwardkinematics.h
+│  ├── intervaltimer.h
 │  ├── motorcontrol.h
+│  ├── positioncontrol.h
 │  └── wscommunicator.h
 └── README.md
 ```
@@ -33,4 +43,9 @@ You will need to install
 
 - [Arduino](https://www.arduino.cc/en/software)
 - The [Espressif Systems ESP32 board manager](https://github.com/espressif/arduino-esp32)
-- [WebSocket Server and Client for Arduino](https://github.com/Links2004/arduinoWebSockets)
+- Libraries
+  - [WebSocket Server and Client for Arduino](https://github.com/Links2004/arduinoWebSockets)
+  - [ESP32Encoder](https://github.com/madhephaestus/ESP32Encoder/)
+  - [QMC5883L Compass Arduino Library](https://github.com/mprograms/QMC5883LCompass)
+  - [SparkFun Qwiic Time-of-Flight Sensor VL53L5CX Arduino Library](https://github.com/sparkfun/SparkFun_VL53L5CX_Arduino_Library)
+  - [U8g2: Library for monochrome displays](https://github.com/olikraus/u8g2)
